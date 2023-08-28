@@ -21,15 +21,3 @@ const galleryLightbox = new SimpleLightbox(".gallery a", {
     captionDelay: 250,
     captionsData: "alt"
 });
-
-galleryList.addEventListener("click", onMouseClick);
-
-function onMouseClick(evt) {
-  if (!evt.target.classList.contains(".js-target")) {
-    return;
-  }
-
-  galleryLightbox.show();
-}
-
-

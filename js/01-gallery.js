@@ -21,6 +21,8 @@ const markup = galleryItems.map(({ preview, original, description }) => {
 galleryList.insertAdjacentHTML("beforeend", markup.join(""))
 
 function onMouseClick(event) {
+    event.preventDefault();
+    
     const { target } = event;
     if (!target.classList.contains("js-target")) {
         return
