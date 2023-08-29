@@ -39,7 +39,7 @@ function onMouseClick(event) {
     
     instance.show();
 
-window.addEventListener("keydown", onEscPress);
+document.addEventListener("keydown", onEscPress);
 
     function onEscPress(event) {
         const ESK_KEY_CODE = event.code === 'Escape'
